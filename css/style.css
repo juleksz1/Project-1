@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+/* OGÓLNE */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebe9e9;
+    color: #181818;
+    font-size: 16px;
+}
+
+.wrapper {
+    max-width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+    color: #181818;
+}
+
+/* header {
+    height: 100vh;
+} */
+
+.btn {
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+/* END OGÓLNE */
+
+/* NAWIGACJA */
+
+.menu {
+    display: none;
+    gap: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.menu li {
+    padding: 20px 20px;
+}
+
+.home {
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.fa-bars {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.contactus-btn {
+    border: 2px solid #181818;
+}
+
+/* END NAWIGACJA */
+
+/* HEADER INFO */
+
+.header-info {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.header-text p {
+    padding: 30px 0;
+}
+
+.headerinfo-btn {
+    background-color: #181818;
+    color: #ebe9e9;
+    height: 40px;
+}
+
+.header-img {
+    width: 100%;
+    padding: 40px 0;
+}
+
+/* END HEADER INFO */
+
+@media (min-width: 1024px) {
+
+    .menu {
+        display: flex;
+    }
+
+    .dwn-menu {
+        display: none;
+    }
+
+    .contactus-btn {
+        width: 200px;
+    }
+
+    .header-info {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    .header-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: normal;
+        padding: 0 10% 0 0;
+    }
+
+    .header-text h1 {
+        font-size: 62px;
+        line-height: 60px;
+    }
+
+    .header-text p {
+        padding: 20px 0;
+    }
+
+    .headerinfo-btn {
+        background-color: #181818;
+        color: #ebe9e9;
+        height: 40px;
+    }
+
+    .header-img {
+        width: 50%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .header-text h1 {
+        font-size: 70px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+    }
+}
